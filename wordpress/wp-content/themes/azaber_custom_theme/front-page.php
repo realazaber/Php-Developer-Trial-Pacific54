@@ -14,7 +14,10 @@
 <body>
     <div class="container-xxl bg-white p-0">
 
+        <?php get_header(); ?>
+
         <?php
+        get_template_part('template-parts/full-screen-search');
         get_template_part('template-parts/spinner');
 
         ?>
@@ -28,7 +31,14 @@
             }
             ?>
         </div>
-        <?php wp_footer(); ?>
+
+        <?php
+        get_template_part('footer');
+        ?>
+
+        <?php
+        wp_footer();
+        ?>
 
         <!-- Back to Top -->
         <?php
