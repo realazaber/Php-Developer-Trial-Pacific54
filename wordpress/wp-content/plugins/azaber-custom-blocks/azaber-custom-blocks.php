@@ -11,6 +11,12 @@ function azaber_custom_block_scripts_register()
         array('wp-blocks', 'wp-editor'),
         true
     );
+    wp_enqueue_script(
+        'portfolio-block',
+        plugin_dir_url(__FILE__) . 'portfolio-item.js',
+        array('wp-blocks', 'wp-editor'),
+        true
+    );
 }
 
 add_action('enqueue_block_editor_assets', 'azaber_custom_block_scripts_register');
