@@ -391,14 +391,14 @@ h6,
 
 
 /*** Project Portfolio ***/
-#portfolio-flters .btn {
+.portfolio-flters .btn {
     position: relative;
     display: inline-block;
     margin: 10px 4px 0 4px;
     transition: .5s;
 }
 
-#portfolio-flters .btn::after {
+.portfolio-flters .btn::after {
     position: absolute;
     content: "";
     right: -1px;
@@ -408,8 +408,8 @@ h6,
     border-bottom: 50px solid #FFFFFF;
 }
 
-#portfolio-flters .btn:hover,
-#portfolio-flters .btn.active {
+.portfolio-flters .btn:hover,
+.portfolio-flters .btn.active {
     color: var(--light);
     background: var(--primary);
 }
