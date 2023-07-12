@@ -12,9 +12,12 @@
 </head>
 
 <body>
+    <?php
+    get_header();
+    ?>
     <div class="container-xxl bg-white p-0">
 
-        <?php get_header(); ?>
+
 
         <?php
         get_template_part('template-parts/full-screen-search');
@@ -32,18 +35,16 @@
             ?>
         </div>
 
-        <?php
-        get_template_part('footer');
-        ?>
-
-        <?php
-        wp_footer();
-        ?>
-
         <!-- Back to Top -->
         <?php
         get_template_part('template-parts/back-to-top');
         ?>
+
+        <?php
+        get_footer("footer.php");
+        wp_footer();
+        ?>
+
     </div>
 </body>
 
